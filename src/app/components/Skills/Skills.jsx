@@ -58,7 +58,7 @@ export default function Skills() {
   return (
     <section className="py-10 max-w-9xl container mx-auto text-white">
       <div className="">
-        <h2 className="text-6xl font-bold text-center mb-8">SKILLS I HAVE</h2>
+        <h2 className="text-6xl font-bold text-center mb-8">SKI<span className="text-blue-600">LL</span>S I <span className="text-orange-600">HAVE</span></h2>
 
         {/* Loop through each category */}
         {Object.entries(skills).map(([category, skillsList]) => (
@@ -69,7 +69,7 @@ export default function Skills() {
               {skillsList.map((skill, index) => (
                 <div 
                   key={index} 
-                  className="bg-[#222] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   {/* Window Dots */}
                   <div className="absolute top-3 left-4 flex space-x-2">
@@ -108,7 +108,7 @@ export default function Skills() {
 
                        <div 
                  
-                  className="bg-[#222] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   {/* Window Dots */}
                   <div className="absolute top-3 left-4 flex space-x-2">
@@ -130,7 +130,7 @@ export default function Skills() {
                     <h3 className="text-lg font-semibold">Codeforeces</h3>
 
                     <Link href="https://codeforces.com/profile/Sizzad_Hosen">
-                 <button className="absolute hover:bg-blue-500 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+                 <button className="absolute  top-4 right-4 bg-gray-800 p-2 rounded-full text-white">
                   Profile<FaArrowRight />
           
                     
@@ -142,7 +142,7 @@ export default function Skills() {
                 </div>
                        <div 
                  
-                  className="bg-[#222] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   {/* Window Dots */}
                   <div className="absolute top-3 left-4 flex space-x-2">
@@ -156,15 +156,15 @@ export default function Skills() {
                     <Image 
                       width={100} 
                       height={100} 
-                      src={"https://www.codechef.com/users/sizzad_hosen"} 
+                      src={"https://i.postimg.cc/sxDD0SRF/image-removebg-preview-14.png"} 
                       alt={""} 
                       className="w-14 h-14 mb-4" 
                       unoptimized={true} 
                     />
                     <h3 className="text-lg font-semibold">CodeChef</h3>
 
-                    <Link href="">
-                 <button className="absolute hover:bg-blue-500 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+                    <Link href="https://www.codechef.com/users/sizzad_hosen">
+                 <button className="absolute  top-4 right-4 bg-gray-800 p-2 rounded-full text-white">
                   Profile<FaArrowRight />
           
                     
@@ -176,7 +176,7 @@ export default function Skills() {
                 </div>
                        <div 
                  
-                  className="bg-[#222] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   {/* Window Dots */}
                   <div className="absolute top-3 left-4 flex space-x-2">
@@ -198,7 +198,7 @@ export default function Skills() {
                     <h3 className="text-lg font-semibold">Leetcode</h3>
 
                     <Link href="https://leetcode.com/u/SizzadHosen/">
-                 <button className="absolute hover:bg-blue-500 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+                 <button className="absolute  top-4 right-4 bg-gray-800 p-2 rounded-full text-white">
                   Profile<FaArrowRight />
           
                     
@@ -210,7 +210,7 @@ export default function Skills() {
                 </div>
                        <div 
                  
-                  className="bg-[#222] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-xl shadow-lg relative transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   {/* Window Dots */}
                   <div className="absolute top-3 left-4 flex space-x-2">
@@ -224,15 +224,15 @@ export default function Skills() {
                     <Image 
                       width={100} 
                       height={100} 
-                      src={"https://www.codingninjas.com/"} 
+                      src={"https://i.postimg.cc/Y9xC3RZf/image-removebg-preview-16.png"} 
                       alt={""} 
                       className="w-14 h-14 mb-4" 
                       unoptimized={true} 
                     />
                     <h3 className="text-lg font-semibold">Coding Ninjas</h3>
 
-                    <Link href="">
-                 <button className="absolute hover:bg-blue-500 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+                    <Link href="https://www.codingninjas.com/">
+                 <button className="absolute  top-4 right-4 bg-gray-800 p-2 rounded-full text-white">
                   Profile<FaArrowRight />
           
                     

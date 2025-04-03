@@ -25,7 +25,8 @@ const Navbar = ({ children }) => {
           
           {/* Left: Logo */}
           <div className="text-xl font-bold cursor-pointer" onClick={() => router.push("/")}>
-            MyLogo
+            SI<span className="text-2xl text-orange-600">ZZ</span>AD
+            
           </div>
 
           {/* Middle: Navigation Links */}
@@ -35,7 +36,7 @@ const Navbar = ({ children }) => {
                 key={item.path}
                 onClick={() => router.push(item.path)}
                 className={`px-4 py-2 rounded-md transition ${
-                  pathname === item.path ? "bg-gray-700" : "hover:bg-gray-600"
+                  pathname === item.path ? "bg-gray-700" : "hover:bg-gray-900"
                 }`}
               >
                 {item.title}
@@ -47,13 +48,13 @@ const Navbar = ({ children }) => {
           <div className="space-x-4 ">
             <button 
               onClick={() => router.push("/")} 
-              className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-700 transition"
+              className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
             >
               LET'S TALK
             </button>
             <button 
               onClick={() => router.push("/")} 
-              className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-700 transition"
+              className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
             >
               GET MY RESUME
             </button>

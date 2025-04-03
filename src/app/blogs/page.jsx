@@ -1,16 +1,36 @@
+"use client"
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function BlogPage() {
   return (
-    <div className="bg- text-white min-h-screen ">
-      <h1 className="text-center text-4xl font-bold mb-6">BLOGS</h1>
+    <motion.div 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 0.8 }}
+      className="bg- text-white min-h-screen "
+    >
+      <motion.h1 
+        initial={{ y: -50, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 0.6 }}
+        className="text-center text-4xl font-bold mb-6"
+      >
+        BLOGS
+      </motion.h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
         {/* Blog Posts Section */}
         <div className="md:col-span-2 space-y-6">
           {[...Array(2)].map((_, index) => (
-            <div key={index} className="bg-gray-900 p-4 rounded-xl shadow-lg">
+            <motion.div 
+              key={index} 
+              initial={{ opacity: 0, scale: 0.9 }} 
+              animate={{ opacity: 1, scale: 1 }} 
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-4 rounded-xl shadow-lg"
+            >
               <Image
                 src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop&q=60"
                 alt="Blog"
@@ -28,74 +48,52 @@ export default function BlogPage() {
               </div>
               <h2 className="text-2xl font-semibold mt-4">THE MULTIVERSE IS THE COLLECTION OF ALTERNATE UNIVERSES</h2>
               <p className="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque labor...</p>
-              <button className="mt-4 px-4 py-2 bg-gray-700 rounded-lg">LEARN MORE →</button>
-            </div>
+              <motion.button 
+                whileHover={{ scale: 1.1 }} 
+                whileTap={{ scale: 0.9 }}
+                className="mt-4 px-4 py-2 bg-gray-700 rounded-lg"
+              >
+                LEARN MORE →
+              </motion.button>
+            </motion.div>
           ))}
         </div>
 
         {/* Sidebar Section */}
         <div className="space-y-6">
           {/* Search Bar */}
-          <div className="bg-gray-900 p-4 rounded-xl shadow-lg flex items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.6 }}
+            className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-4 rounded-xl shadow-lg flex items-center"
+          >
             <input type="text" placeholder="Search" className="bg-transparent flex-grow text-white outline-none px-2" />
             <button className="bg-gray-700 px-4 py-2 rounded-lg">SEARCH</button>
-          </div>
+          </motion.div>
 
           {/* Recent Blogs */}
-          <div className="bg-gray-900 p-4 rounded-xl shadow-lg">
-          <div className="flex justify-between items-center">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.7 }}
+            className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-4 rounded-xl shadow-lg"
+          >
             <h3 className="text-lg font-semibold mb-3">RECENT BLOGS</h3>
-            <div className="flex gap-1">
-                <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-                <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-                <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-            </div>
-            </div>
-
             <ul className="space-y-2">
               {[...Array(6)].map((_, i) => (
-                <li key={i} className="text-blue-400 cursor-pointer hover:underline">Lorem ipsum dolor sit amet consectetur sit</li>
+                <motion.li 
+                  key={i} 
+                  whileHover={{ x: 10 }}
+                  className="text-blue-400 cursor-pointer hover:underline"
+                >
+                  Lorem ipsum dolor sit amet consectetur sit
+                </motion.li>
               ))}
             </ul>
-          </div>
-
-          {/* Categories */}
-          <div className="bg-gray-900 p-4 rounded-xl shadow-lg">
-          <div className="flex justify-between items-center">
-            <h3 className="text-lg font-semibold mb-3">CATEGORIES</h3>
-            <div className="flex gap-1">
-                <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-                <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-                <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-            </div>
-            </div>
-
-            <ul className="space-y-2">
-              {["TECHNICAL", "VS CODE PROBLEMS", "GITHUB PROBLEMS", "CODING BUG SOLUTIONS", "SECURITY", "TECHNOLOGY"].map((cat, i) => (
-                <li key={i} className="cursor-pointer hover:bg-blue-600 p-2 rounded">{i + 1}. {cat}</li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Tags */}
-          <div className="bg-gray-900 p-4 rounded-xl shadow-lg">
-          <div className="flex justify-between items-center">
-  <h3 className="text-lg font-semibold mb-3">TAGS</h3>
-  <div className="flex gap-1">
-    <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-    <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-    <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-  </div>
-</div>
-
-            <div className="flex flex-wrap gap-2">
-              {["FIGMA", "HTML 5", "CSS 3", "TAILWIND CSS", "REACT JS", "NEXT JS", "NODE JS", "EXPRESS JS", "WEB DEVELOPMENT"].map((tag, i) => (
-                <span key={i} className="bg-gray-700 px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-blue-600">{tag}</span>
-              ))}
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
