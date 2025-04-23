@@ -27,7 +27,7 @@ import { motion } from 'framer-motion';
             'User profile for managing car service history and appointments.',
             'Notification system to alert users about their appointment status.'
           ],
-          technologies: ['NextJS', 'DaisyUI', 'MongoDB'],
+          technologies: ['NextJS','Tailwind CSS', 'DaisyUI', 'MongoDB'],
           timeTaken: '2 weeks',
         },
         
@@ -53,7 +53,7 @@ import { motion } from 'framer-motion';
             'Customer feedback system to rate restaurants and food.',
             'Order history for easy reordering of favorite meals.'
           ],
-          technologies: ['React', 'React-dom', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
+          technologies: ['React', 'React-dom','Tailwind CSS', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
           timeTaken: '3 weeks',
         },
         
@@ -79,7 +79,7 @@ import { motion } from 'framer-motion';
             'Admin panel to manage product listings and inventory.',
             'Integrated payment gateway (Stripe) for secure transactions.'
           ],
-          technologies: ['NextJS', 'Redux Toolkit', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
+          technologies: ['NextJS', 'Redux Toolkit','Tailwind CSS', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
           timeTaken: '4 weeks',
         },
       
