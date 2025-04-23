@@ -51,7 +51,7 @@ const Home = () => {
   };
 
   return   (
-    <div className="text-white mx-auto container min-h-screen">
+    <div className="text-white  mx-auto container min-h-screen">
       
       <motion.section 
         className="flex flex-col lg:flex-row gap-5"
@@ -68,7 +68,7 @@ const Home = () => {
     >
       <div className="rounded-xl overflow-hidden w-32 h-32 sm:w-40 sm:h-40">
         <Image
-          src="https://i.postimg.cc/mDBSDFwy/IMG-6118.jpg"
+          src="https://i.postimg.cc/RCWkbwC6/20240206-103544.jpg"
           alt="Profile"
           width={160}
           height={160}
@@ -82,11 +82,11 @@ const Home = () => {
         <h2 className="text-3xl font-semibold leading-tight">
           Md Sizzad <span className="block font-bold">Hosen</span>
         </h2>
-        <p className="text-gray-400 mt-1 text-sm">A software engineer based in Dhaka, Bangladesh</p>
+        <p className="text-gray-400 mt-1 text-sm"> Software Engineer at Shefra</p>
       </div>
 
       {/* Arrow Button */}
-      <div className="ml-auto text-gray-400 hover:bg-orange-600 bg-gray-700 rounded-full p-2 cursor-pointer">
+      <div className="ml-auto text-gray-400 hover:bg-gray-900 bg-gray-700 rounded-full p-2 cursor-pointer">
         <Link href={"/about"}>
           <FaArrowRight size={20} />
         </Link>
@@ -117,7 +117,7 @@ const Home = () => {
   animate="visible"
 >
   <Link href={"/skills"}>
-    <button className="absolute hover:bg-orange-600 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+    <button className="absolute  top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
       <FaArrowRight />
     </button>
   </Link>
@@ -138,7 +138,7 @@ const Home = () => {
   animate="visible"
 >
   <Link href={"/projects"}>
-    <button className="absolute hover:bg-orange-600 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+    <button className="absolute  top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
       <FaArrowRight />
     </button>
   </Link>
@@ -160,7 +160,7 @@ const Home = () => {
         animate="visible"
       >
         <Link href={"/blogs"}>
-          <button className="absolute hover:bg-orange-600 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+          <button className="absolute  top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
             <FaArrowRight />
           </button>
         </Link>
@@ -168,27 +168,48 @@ const Home = () => {
         <h3 className="text-xl font-semibold mt-4">Blogs</h3>
         <p className="text-gray-400">Read my latest articles.</p>
       </motion.div>
+{/* Services Card */}
+<motion.div 
+  className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-4 sm:p-6 rounded-2xl shadow-lg flex flex-col items-center text-center relative w-full max-w-md mx-auto"
+  variants={serviceVariants}
+  initial="hidden"
+  animate="visible"
+>
+  <Link href={"/services"}>
+  <button className="absolute  top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+      <FaArrowRight />
+    </button>
+  </Link>
 
-      {/* Services Card */}
-      <motion.div 
-        className="bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-2xl shadow-lg flex flex-col items-center text-center relative"
-        variants={serviceVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <Link href={"/services"}>
-          <button className="absolute hover:bg-orange-600 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
-            <FaArrowRight />
-          </button>
-        </Link>
-        <div className="flex gap-4 pt-4 mt-4">
-          <Image className='bg-white text-4xl' src="https://i.postimg.cc/2ypSQjn5/image-removebg-preview-9.png" alt="UX/UI" width={100} height={100} />
-          <Image className='bg-white text-4xl' src="https://i.postimg.cc/ZnJ1t1Sc/image-removebg-preview-11.png" alt="System Design" width={100} height={100} />
-          <Image className='bg-white text-4xl' src="https://i.postimg.cc/50QtQQYG/image-removebg-preview-10.png" alt="Development" width={100} height={100} />
-        </div>
-        <h3 className="text-xl font-semibold mt-4">Specialization</h3>
-        <p className="text-gray-400">Service Offering</p>
-      </motion.div>
+  {/* Images */}
+  <div className="flex gap-4 pt-4 mt-4 flex-wrap justify-center">
+    <Image
+      className="bg-white rounded-lg p-2"
+      src="https://i.postimg.cc/2ypSQjn5/image-removebg-preview-9.png"
+      alt="UX/UI"
+      width={80}
+      height={80}
+    />
+    <Image
+      className="bg-white rounded-lg p-2"
+      src="https://i.postimg.cc/ZnJ1t1Sc/image-removebg-preview-11.png"
+      alt="System Design"
+      width={80}
+      height={80}
+    />
+    <Image
+      className="bg-white rounded-lg p-2"
+      src="https://i.postimg.cc/50QtQQYG/image-removebg-preview-10.png"
+      alt="Development"
+      width={80}
+      height={80}
+    />
+  </div>
+
+  {/* Text Content */}
+  <h3 className="text-lg sm:text-xl font-semibold mt-4">Specialization</h3>
+  <p className="text-gray-400 text-sm sm:text-base">Service Offering</p>
+</motion.div>
 
       {/* Contact Card */}
       <motion.div 
@@ -198,7 +219,7 @@ const Home = () => {
         animate="visible"
       >
         <Link href={"/contact"}>
-          <button className="absolute hover:bg-orange-600 top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
+          <button className="absolute  top-4 right-4 bg-gray-700 p-2 rounded-full text-white">
             <FaArrowRight />
           </button>
         </Link>

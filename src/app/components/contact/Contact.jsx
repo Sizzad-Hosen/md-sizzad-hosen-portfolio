@@ -9,8 +9,68 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Check if all fields are filled
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      Swal.fire({
+        icon: "warning",
+        title: "Incomplete Form",
+        text: "Please fill in all the fields.",
+      });
+      return;
+    }
+
+    try {
+      const res = await fetch("http://localhost:3000/contact/api", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent",
+          text: "Thanks for reaching out! I will get back to you soon.",
+          confirmButtonColor: "#3085d6",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: data.error || "Something went wrong!",
+        });
+      }
+    } catch (err) {
+      console.error(err);
+      Swal.fire({
+        icon: "error",
+        title: "Failed to send message",
+        text: "Please try again later.",
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen text-white flex mx-auto pt-6 justify-center">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-8xl pt-7 h-1/2">
@@ -65,24 +125,36 @@ export default function ContactForm() {
           <h2 className="text-5xl font-bold mb-6">
             Let's Work <span className="text-blue-400">Together</span>
           </h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
+              name="name"
               placeholder="Your name"
+              value={formData.name}
+              onChange={handleChange}
               className="w-full p-3 mb-4 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Your email"
               className="w-full p-3 mb-4 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="text"
+              name="subject"
               placeholder="Your Subject"
+              value={formData.subject}
+              onChange={handleChange}
               className="w-full p-3 mb-4 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <textarea
+              name="message"
               placeholder="Your message"
+              value={formData.message}
+              onChange={handleChange}
               rows="4"
               className="w-full p-3 mb-4 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>

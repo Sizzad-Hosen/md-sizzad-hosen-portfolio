@@ -73,7 +73,7 @@ const EducationSection = () => {
               viewport={{ once: true }}
             >
               {/* Icon */}
-              <div className="absolute -left-9 top-1 bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-2 rounded-full">
+              <div className="absolute mt-3  bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-1  rounded-full">
                 {edu.icon}
               </div>
               {/* Education Details */}
