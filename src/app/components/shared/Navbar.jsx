@@ -59,11 +59,11 @@ const Navbar = ({ children }) => {
             <a>
 
             <button 
-              onClick={() => router.push("https://drive.google.com/file/d/1HkZL5ZGgMq5D_uzYglqaOMaJf_fd9uBL/view")} 
-              className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
-            >
-              GET MY RESUME
-            </button>
+  onClick={() => window.open("https://drive.google.com/file/d/1HkZL5ZGgMq5D_uzYglqaOMaJf_fd9uBL/view", "_blank", "noopener,noreferrer")}
+  className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
+>
+  GET MY RESUME
+</button>
 
             </a>
           </div>
@@ -98,13 +98,13 @@ const Navbar = ({ children }) => {
             >
               LET'S TALK
             </button>
-            <button 
-              onClick={() => router.push("https://drive.google.com/file/d/1HkZL5ZGgMq5D_uzYglqaOMaJf_fd9uBL/view")} 
-              className="w-full px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-800 transition"
-            >
-              GET MY RESUME
-            </button>
-          </div>
+                    <button 
+          onClick={() => window.open("https://drive.google.com/file/d/1HkZL5ZGgMq5D_uzYglqaOMaJf_fd9uBL/view", "_blank", "noopener,noreferrer")}
+          className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
+        >
+          GET MY RESUME
+        </button>
+                  </div>
         </div>
       )}
 

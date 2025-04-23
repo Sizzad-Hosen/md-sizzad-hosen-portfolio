@@ -49,16 +49,14 @@ const AwardsSection = () => {
 
 
 
-           <a href={award.link}>
-               <button
+              <a href={award.link} target="_blank" rel="noopener noreferrer">
+              <button
                 type="button"
                 className="mt-4 border border-gray-500 hover:bg-white w-full py-3 bg-gradient-to-r from-[#7a7a7a] to-[#272525] text-white rounded-full hover:bg-gradient-to-r hover:from-[#fff6f6] hover:to-[#d1caca] hover:text-black transition-all"
               >
                 SEE CREDENTIALS
               </button>
-
-          </a>
-                      
+            </a>  
 
             </motion.div>
           ))}
