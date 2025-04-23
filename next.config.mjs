@@ -4,7 +4,9 @@ const nextConfig = {
     domains: [
       "i.postimg.cc",
       "images.unsplash.com",
-      "s3-ap-south-1.amazonaws.com", // Added this domain
+      "s3-ap-south-1.amazonaws.com",
+       "wk-partners.co.jp" ,
+      "cdn.hashnode.com", // ✅ Added this domain
     ],
   },
 };

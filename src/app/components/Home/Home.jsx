@@ -102,7 +102,7 @@ const Home = () => {
     <div className="animate-marquee whitespace-nowrap font-bold text-sm sm:text-base flex gap-8">
       <span>Connect with me via Gmail: <span className="text-yellow-400">sizzadhosen@gmail.com</span></span>
       <span>|</span>
-      <span>  Call me at: <span className="text-orange-600">+8801708694445</span></span>
+      <span>  Call me at: <span className="text-info">+8801708694445</span></span>
     </div>
   </div>
 </div>

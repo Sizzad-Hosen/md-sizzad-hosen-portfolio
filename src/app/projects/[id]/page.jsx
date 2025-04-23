@@ -124,10 +124,10 @@ export default function ProjectDetails() {
       <h3 className="text-xl font-semibold">Project Duration:</h3>
       <p>{project.timeTaken}</p>
       <a
-  href={project.liveLink}
-  target="_blank"
-  rel="noopener noreferrer"
->
+      href={project.liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
   <button
     className="inline-block mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition duration-300"
   >

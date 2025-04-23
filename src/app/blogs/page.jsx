@@ -17,7 +17,7 @@ export default function BlogPage() {
         image: "https://i.postimg.cc/mDBSDFwy/IMG-6118.jpg",
         date: "April 22",
       },
-      coverImage: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop&q=60",
+      coverImage: "https://wk-partners.co.jp/homepage/wp-content/uploads/2019/12/01.typescript.png",
       excerpt: "My first articale about TypeScript. A beginner-friendly guide to understanding TypeScript fundamentals...",
     },
     {

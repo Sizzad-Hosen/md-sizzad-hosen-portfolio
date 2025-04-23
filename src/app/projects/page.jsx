@@ -82,6 +82,8 @@ import { motion } from 'framer-motion';
           technologies: ['NextJS', 'Redux Toolkit', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
           timeTaken: '4 weeks',
         },
+      
+
       ];
       
   
