@@ -6,36 +6,40 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const projects = [
-    { 
-      id: 1,
-      title: 'Car Service',
-      liveLink: 'https://car-doctor-website-346e1.web.app/',
-      category: 'Car Service Web App',
-      imgCover: 'https://i.postimg.cc/Vvvgvw3j/car-service-technologycustomer-satisfaction-guarantee-600nw-2271159941.webp',
-      image : {
-        img1: "https://i.postimg.cc/fTfwvhFc/Screenshot-2025-04-23-014230.png",
-        img2: "https://i.postimg.cc/g0Qd0cXW/Screenshot-2025-04-23-014242.png",
-        img3: "https://i.postimg.cc/tT6bn0WV/Screenshot-2025-04-23-014253.png",
-        img4: "https://i.postimg.cc/JzTM95Rt/Screenshot-2025-04-23-014310.png",
-        img5: "https://i.postimg.cc/L84mCbKr/Screenshot-2025-04-23-014338.png",
-        img6: "https://i.postimg.cc/25VrmL5G/Screenshot-2025-04-23-014401.png",
-      },
-      description: 'A web application for booking and managing car services online, offering easy access to repair and maintenance services.',
-      features: [
-        'Easy appointment booking for car repairs and maintenance.',
-        'Real-time tracking of service status.',
-        'Integrated payment system for easy transactions.',
-        'User profile for managing car service history and appointments.',
-        'Notification system to alert users about their appointment status.'
-      ],
-      technologies: ['NextJS','Tailwind CSS', 'DaisyUI', 'MongoDB'],
-      timeTaken: '2 weeks',
-    },
+     { 
+          id: 1,
+          title: 'ClickeiBazar',
+          liveLink: 'https://clickeibazar.com/',
+          category: 'E Commerce Platform',
+          imgCover: 'https://i.postimg.cc/j5sV6WHN/image.png',
+          image : {
+            img1: "https://i.postimg.cc/X7ZvBhNT/Screenshot-2025-12-31-224830.png",
+            img2: "https://i.postimg.cc/MKcGf4Kx/Screenshot-2025-12-31-224840.png",
+            img3: "https://i.postimg.cc/j5sV6WHN/image.png",
+        
+          },
+           description:
+  "CLICKEIBAZZER is your trusted online marketplace for groceries, fresh foods, electronics, and more. We ensure quality products and fast delivery at your doorstep.",
+
+features: [
+  "Creates selling opportunities for local businesses and individual vendors.",
+  "Multi-vendor marketplace with easy product listing and order management.",
+  "Smart search and recommendations to increase product visibility.",
+  "Secure payments and reliable order processing system.",
+  "Ratings and reviews to build customer trust.",
+  "Scalable platform designed for future growth and monetization."
+],
+
+     
+          technologies: ['NextJS','Tailwind CSS', 'DaisyUI', 'MongoDB', "ExpressJS", "Nodejs", "Ts"],
+          timeTaken: '2-3 Month and Currently Working',
+        },
     
     { 
       id: 2,
       title: 'Restra',
       liveLink: 'https://resturent-website-8f90d.web.app/',
+
       category: 'Online Food Order System',
       imgCover: 'https://i.postimg.cc/v82Xj1VX/choy-2000x1125.jpg',
       image:{
@@ -85,6 +89,32 @@ const projects = [
       technologies: ['NextJS', 'Redux Toolkit', 'Tailwind CSS','DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
       timeTaken: '4 weeks',
     },
+    
+    {
+      id: 4,
+      title: 'Restra',
+      liveLink: 'https://resturent-website-8f90d.web.app/',
+      category: 'Resturent management Web Application',
+      imgCover: 'https://i.postimg.cc/Bv3CDHrZ/depositphotos-38143799-stock-photo-e-commerce-shopping-cart-with.webp',
+      image:{
+        img1:"https://i.postimg.cc/DZ2r2FhF/Screenshot-2025-12-31-225842.png",
+        img2:"https://i.postimg.cc/wv6X6Hz6/Screenshot-2025-12-31-225901.png",
+        img3:"https://i.postimg.cc/G2qktN30/Screenshot-2025-12-31-225930.png",
+        img4:"https://i.postimg.cc/xCtK87fw/Screenshot-2025-12-31-225945.png",
+      },
+       description: 'A restaurant management and online ordering system that allows customers to place food orders digitally while enabling restaurants to manage menus, orders, and operations efficiently.',
+    features: [
+      'Digital menu browsing with real-time availability.',
+      'Online food ordering with cart and checkout system.',
+      'Order tracking and status updates for customers.',
+      'Restaurant dashboard to manage orders, menu items, and pricing.',
+      'Secure online payment integration for seamless transactions.'
+    ]
+    ,
+              technologies: ['ReactJS', 'Tailwind CSS', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
+          timeTaken: '4 weeks',
+        },
+      
   ];
   
 export default function ProjectDetails() {

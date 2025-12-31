@@ -8,6 +8,36 @@ import { motion } from 'framer-motion';
     const projects = [
         { 
           id: 1,
+          title: 'ClickeiBazar',
+          category: 'E Commerce Platform',
+          imgCover: 'https://i.postimg.cc/j5sV6WHN/image.png',
+          image : {
+            img1: "https://i.postimg.cc/fTfwvhFc/Screenshot-2025-04-23-014230.png",
+            img2: "https://i.postimg.cc/g0Qd0cXW/Screenshot-2025-04-23-014242.png",
+            img3: "https://i.postimg.cc/tT6bn0WV/Screenshot-2025-04-23-014253.png",
+            img4: "https://i.postimg.cc/JzTM95Rt/Screenshot-2025-04-23-014310.png",
+            img5: "https://i.postimg.cc/L84mCbKr/Screenshot-2025-04-23-014338.png",
+            img6: "https://i.postimg.cc/25VrmL5G/Screenshot-2025-04-23-014401.png",
+          },
+      description:
+  "CLICKEIBAZZER is your trusted online marketplace for groceries, fresh foods, electronics, and more. We ensure quality products and fast delivery at your doorstep.",
+
+features: [
+  "Creates selling opportunities for local businesses and individual vendors.",
+  "Multi-vendor marketplace with easy product listing and order management.",
+  "Smart search and recommendations to increase product visibility.",
+  "Secure payments and reliable order processing system.",
+  "Ratings and reviews to build customer trust.",
+  "Scalable platform designed for future growth and monetization."
+]
+
+
+,
+          technologies: ['NextJS','Tailwind CSS', 'DaisyUI', 'MongoDB', "ExpressJS", "Nodejs", "Ts"],
+          timeTaken: '2-3 Month and Currently Working',
+        },
+        { 
+          id: 2,
           title: 'Car Service',
           category: 'Car Service Web App',
           imgCover: 'https://i.postimg.cc/Vvvgvw3j/car-service-technologycustomer-satisfaction-guarantee-600nw-2271159941.webp',
@@ -32,10 +62,11 @@ import { motion } from 'framer-motion';
         },
         
         { 
-          id: 2,
-          title: 'Restra',
-          category: 'Online Food Order System',
-          imgCover: 'https://i.postimg.cc/v82Xj1VX/choy-2000x1125.jpg',
+          id: 3,
+          title: 'BDShop',
+          category: 'E Commerce Website',
+
+                 imgCover: 'https://i.postimg.cc/Bv3CDHrZ/depositphotos-38143799-stock-photo-e-commerce-shopping-cart-with.webp',
           image:{
             img1: "https://i.postimg.cc/HkrhkwQr/Screenshot-2025-04-23-014552.png",
             img2: "https://i.postimg.cc/y82rgDPv/Screenshot-2025-04-23-014606.png",
@@ -58,28 +89,26 @@ import { motion } from 'framer-motion';
         },
         
         {
-          id: 3,
-          title: 'BDSHOP',
-          category: 'E-commerce Web Application',
-          imgCover: 'https://i.postimg.cc/Bv3CDHrZ/depositphotos-38143799-stock-photo-e-commerce-shopping-cart-with.webp',
+          id: 4,
+          title: 'Restra',
+          category: 'Resturent Management Web Application',
+               imgCover: 'https://i.postimg.cc/DZ2r2FhF/Screenshot-2025-12-31-225842.png',
           image:{
-            img1:"https://i.postimg.cc/8PMFQ3Yc/Screenshot-2025-04-22-213719.png",
-            img2:"https://i.postimg.cc/3wSNFHkS/Screenshot-2025-04-22-213727.png",
-            img3:"https://i.postimg.cc/BnCXtF4G/Screenshot-2025-04-22-213745.png",
-            img4:"https://i.postimg.cc/d0tDC0VZ/Screenshot-2025-04-22-213806.png",
-            img5:"https://i.postimg.cc/T3xKR089/Screenshot-2025-04-22-213820.png",
-            img6:"https://i.postimg.cc/bJZJ6Fbz/Screenshot-2025-04-22-213834.png",
-            img7:"https://i.postimg.cc/63FQFLLC/Screenshot-2025-04-22-213847.png",
+        img1:"https://i.postimg.cc/DZ2r2FhF/Screenshot-2025-12-31-225842.png",
+        img2:"https://i.postimg.cc/wv6X6Hz6/Screenshot-2025-12-31-225901.png",
+        img3:"https://i.postimg.cc/G2qktN30/Screenshot-2025-12-31-225930.png",
+        img4:"https://i.postimg.cc/xCtK87fw/Screenshot-2025-12-31-225945.png",
           },
-          description: 'An e-commerce platform that enables users to shop for products online, manage shopping carts, and make secure payments.',
-          features: [
-            'Product browsing and filtering by category.',
-            'Add products to shopping cart and secure checkout process.',
-            'Order history and tracking for customers.',
-            'Admin panel to manage product listings and inventory.',
-            'Integrated payment gateway (Stripe) for secure transactions.'
-          ],
-          technologies: ['NextJS', 'Redux Toolkit','Tailwind CSS', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
+       description: 'A restaurant management and online ordering system that allows customers to place food orders digitally while enabling restaurants to manage menus, orders, and operations efficiently.',
+    features: [
+      'Digital menu browsing with real-time availability.',
+      'Online food ordering with cart and checkout system.',
+      'Order tracking and status updates for customers.',
+      'Restaurant dashboard to manage orders, menu items, and pricing.',
+      'Secure online payment integration for seamless transactions.'
+    ]
+    ,
+              technologies: ['ReactJS', 'Tailwind CSS', 'DaisyUI', 'Node.js', 'Express', 'JWT', 'MongoDB', 'Stripe API'],
           timeTaken: '4 weeks',
         },
       

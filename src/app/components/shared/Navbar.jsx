@@ -24,13 +24,13 @@ const Navbar = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen p-2 max-w-7xl mx-auto text-white">
+    <div className="min-h-screen p-2 mx-auto text-white">
       {/* Navbar */}
       <div className="container mx-auto py-4 px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-xl font-bold cursor-pointer" onClick={() => router.push("/")}>
-            SI<span className="text-2xl text-orange-600">ZZ</span>AD
+            SI<span className="text-2xl text-blue-600">ZZ</span>AD
           </div>
 
           {/* Desktop Navigation */}
@@ -59,7 +59,7 @@ const Navbar = ({ children }) => {
             <a>
 
             <button 
-  onClick={() => window.open("https://drive.google.com/file/d/1HkZL5ZGgMq5D_uzYglqaOMaJf_fd9uBL/view", "_blank", "noopener,noreferrer")}
+  onClick={() => window.open("https://drive.google.com/file/d/1OL5QaG2oNNX0Kq1wc9PM2IAaBz3ShT_9/view", "_blank", "noopener,noreferrer")}
   className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
 >
   GET MY RESUME
@@ -99,7 +99,7 @@ const Navbar = ({ children }) => {
               LET'S TALK
             </button>
                     <button 
-          onClick={() => window.open("https://drive.google.com/file/d/1HkZL5ZGgMq5D_uzYglqaOMaJf_fd9uBL/view", "_blank", "noopener,noreferrer")}
+          onClick={() => window.open("https://drive.google.com/file/d/1OL5QaG2oNNX0Kq1wc9PM2IAaBz3ShT_9/view", "_blank", "noopener,noreferrer")}
           className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
         >
           GET MY RESUME

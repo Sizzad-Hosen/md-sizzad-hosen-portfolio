@@ -78,7 +78,7 @@ const Home = () => {
 
       {/* Profile Details */}
       <div className="text-white">
-        <p className="text-gray-400 text-sm uppercase">A Web Designer & Developer</p>
+        <p className="text-gray-400 text-sm uppercase">Full Stack Software Engineer</p>
         <h2 className="text-3xl font-semibold leading-tight">
           Md Sizzad <span className="block font-bold">Hosen</span>
         </h2>
