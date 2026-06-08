@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <motion.div
-      className="max-w-4xl mx-auto border border-white/10 bg-zinc-900/70 rounded-lg p-6 mt-8 text-white"
+      className="mx-auto max-w-4xl rounded-lg border border-white/10 bg-zinc-900/70 p-6 text-white sm:p-8"
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}

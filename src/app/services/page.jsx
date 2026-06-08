@@ -1,38 +1,62 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Bug, Code2, Gauge, Layers3, MonitorSmartphone, Server } from "lucide-react";
+import { Bug, Code2, Gauge, KeyRound, Layers3, LayoutDashboard, MonitorSmartphone, Server } from "lucide-react";
 
 const services = [
   {
     title: "Full Stack Web Development",
     icon: Layers3,
     desc: "End-to-end web applications with responsive UI, secure APIs, authentication, and database integration.",
+    deliverables: "React, Next.js, Node.js, MongoDB",
   },
   {
     title: "Frontend Development",
     icon: MonitorSmartphone,
     desc: "Modern React and Next.js interfaces that are accessible, responsive, and easy to maintain.",
+    deliverables: "Responsive UI, dashboards, forms",
   },
   {
     title: "Backend API Development",
     icon: Server,
     desc: "REST APIs with Node.js, Express.js, MongoDB, JWT authentication, and clean route structure.",
+    deliverables: "REST APIs, auth, database models",
   },
   {
     title: "MERN / Next.js Application Development",
     icon: Code2,
     desc: "Production-focused applications using MongoDB, Express.js, React, Node.js, and Next.js.",
+    deliverables: "MERN apps, SSR pages, integrations",
+  },
+  {
+    title: "Next.js Website Development",
+    icon: MonitorSmartphone,
+    desc: "SEO-friendly websites with strong page structure, optimized images, clean routing, and polished UI.",
+    deliverables: "SEO, metadata, app router, performance",
   },
   {
     title: "Bug Fixing",
     icon: Bug,
     desc: "Troubleshooting UI issues, broken flows, API bugs, validation problems, and deployment errors.",
+    deliverables: "Debugging, refactors, release fixes",
   },
   {
     title: "Performance Optimization",
     icon: Gauge,
     desc: "Improving page speed, reducing unnecessary client work, optimizing images, and tightening UX details.",
+    deliverables: "Image optimization, UX cleanup",
+  },
+  {
+    title: "Firebase / Authentication Integration",
+    icon: KeyRound,
+    desc: "Authentication flows, protected routes, user state handling, and secure access patterns.",
+    deliverables: "Firebase, JWT, protected pages",
+  },
+  {
+    title: "Dashboard / Admin Panel Development",
+    icon: LayoutDashboard,
+    desc: "Operational dashboards for managing products, orders, users, content, and service workflows.",
+    deliverables: "Tables, forms, filters, role flows",
   },
 ];
 
@@ -62,6 +86,9 @@ export default function ServiceOffering() {
               </div>
               <h2 className="mt-5 text-xl font-semibold">{service.title}</h2>
               <p className="mt-3 leading-7 text-zinc-300">{service.desc}</p>
+              <p className="mt-4 rounded-md border border-white/10 bg-black/20 px-3 py-2 text-sm text-blue-100">
+                {service.deliverables}
+              </p>
             </article>
           );
         })}

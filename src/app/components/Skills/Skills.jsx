@@ -32,6 +32,16 @@ const skillGroups = [
     ],
   },
   {
+    title: "Authentication & Security",
+    skills: [
+      { name: "JWT Authentication", level: "Comfortable" },
+      { name: "Firebase Auth", level: "Comfortable" },
+      { name: "Protected Routes", level: "Comfortable" },
+      { name: "Role-based Access", level: "Familiar" },
+      { name: "Input Validation", level: "Comfortable" },
+    ],
+  },
+  {
     title: "Database",
     skills: [
       { name: "MongoDB", level: "Comfortable" },
@@ -61,6 +71,16 @@ const skillGroups = [
       { name: "Vitest", level: "Familiar" },
       { name: "Supertest", level: "Familiar" },
       { name: "Playwright", level: "Familiar" },
+    ],
+  },
+  {
+    title: "UI Libraries",
+    skills: [
+      { name: "DaisyUI", level: "Comfortable" },
+      { name: "Bootstrap", level: "Comfortable" },
+      { name: "Ant Design", level: "Familiar" },
+      { name: "Framer Motion", level: "Familiar" },
+      { name: "Lucide Icons", level: "Comfortable" },
     ],
   },
   {

@@ -7,14 +7,14 @@ import Footer from "./components/shared/Footer";
 export const metadata = {
   metadataBase: new URL("https://md-sizzad-hosen-portfolio.vercel.app"),
   title: {
-    default: "Md Sizzad Hosen | Full Stack Developer",
+    default: "Md Sizzad Hosen | Full Stack Software Engineer",
     template: "%s | Md Sizzad Hosen",
   },
   description:
-    "Portfolio of Md Sizzad Hosen, a Full Stack Developer focused on MERN, Next.js, scalable web applications, APIs, and responsive user experiences.",
+    "Portfolio of Md Sizzad Hosen, a Full Stack Software Engineer specializing in React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Firebase, and modern web applications.",
   keywords: [
     "Md Sizzad Hosen",
-    "Full Stack Developer",
+    "Full Stack Software Engineer",
     "MERN Developer",
     "Next.js Developer",
     "React Developer",
@@ -22,9 +22,9 @@ export const metadata = {
     "Bangladesh Software Engineer",
   ],
   openGraph: {
-    title: "Md Sizzad Hosen | Full Stack Developer",
+    title: "Md Sizzad Hosen | Full Stack Software Engineer",
     description:
-      "MERN and Next.js developer building responsive, accessible, and production-ready web applications.",
+      "Full Stack Software Engineer building responsive, accessible, and production-ready MERN and Next.js applications.",
     type: "website",
     images: [
       {
@@ -37,9 +37,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Md Sizzad Hosen | Full Stack Developer",
+    title: "Md Sizzad Hosen | Full Stack Software Engineer",
     description:
-      "MERN and Next.js developer building responsive, accessible, and production-ready web applications.",
+      "Full Stack Software Engineer building responsive, accessible, and production-ready MERN and Next.js applications.",
   },
   icons: {
     icon: "/favicon.ico",

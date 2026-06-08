@@ -12,14 +12,14 @@ import ProfileSection from "@/component/Profile";
 
 const Resume = () => {
   return (
-    <div className="flex flex-col lg:flex-row text-white max-w-screen-xl mx-auto min-h-screen">
+    <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col gap-8 text-white lg:grid lg:grid-cols-[360px_1fr]">
       {/* Left Sidebar */}
-      <div className="w-full lg:w-[30%] lg:h-screen lg:sticky lg:top-0  z-10 p-4 sm:p-6">
+      <div className="w-full lg:sticky lg:top-24 lg:h-fit">
         <ProfileSection />
       </div>
 
       {/* Right Content */}
-      <main className="w-full lg:w-[70%] px-4 sm:px-6 mt-6 md:px-8 py-6 space-y-20">
+      <main className="w-full space-y-12 px-0 py-2 sm:space-y-16 lg:py-6">
         {[
           About,
           ExperienceSummary,

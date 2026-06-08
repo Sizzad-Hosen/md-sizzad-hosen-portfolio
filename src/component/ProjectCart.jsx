@@ -30,7 +30,17 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <h2 className="mt-4 text-2xl font-semibold text-white">{project.title}</h2>
-        <p className="mt-3 flex-1 text-sm leading-6 text-zinc-300">{project.description}</p>
+        <p className="mt-3 text-sm font-medium leading-6 text-blue-100">{project.impact}</p>
+        <p className="mt-2 flex-1 text-sm leading-6 text-zinc-300">{project.description}</p>
+
+        <ul className="mt-4 space-y-2 text-sm text-zinc-300">
+          {project.features.slice(0, 3).map((feature) => (
+            <li key={feature} className="flex gap-2">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-300" />
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies.slice(0, 5).map((tech) => (

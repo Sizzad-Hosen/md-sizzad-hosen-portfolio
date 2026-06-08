@@ -1,10 +1,10 @@
 export const siteProfile = {
   name: "Md Sizzad Hosen",
   handle: "sizzadhosen",
-  role: "Full Stack Developer",
-  headline: "Full Stack Developer building reliable MERN and Next.js products.",
+  role: "Full Stack Software Engineer",
+  headline: "I build fast, scalable, and user-focused web applications.",
   value:
-    "I help teams and clients turn ideas into responsive, accessible, and maintainable web applications with React, Next.js, Node.js, Express, and MongoDB.",
+    "I specialize in React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Firebase, and clean full-stack architecture.",
   email: "sizzadhosen@gmail.com",
   phone: "+880 1708 694445",
   location: "Dinajpur, Bangladesh",

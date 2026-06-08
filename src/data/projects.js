@@ -15,6 +15,8 @@ export const projects = [
     ],
     description:
       "A multi-vendor marketplace for groceries, fresh food, electronics, and daily essentials.",
+    impact:
+      "Creates an online selling channel for local vendors while giving customers a faster shopping flow.",
     problem:
       "Local sellers need a simple way to list products online while customers need a faster, more trustworthy buying experience.",
     solution:
@@ -63,6 +65,8 @@ export const projects = [
     ],
     description:
       "A booking platform for car maintenance and repair services with customer-friendly appointment management.",
+    impact:
+      "Simplifies appointment booking and service tracking for vehicle owners and service providers.",
     problem:
       "Vehicle owners often need a simpler way to book services, track appointment status, and keep service history in one place.",
     solution:
@@ -104,6 +108,8 @@ export const projects = [
     ],
     description:
       "An e-commerce application for product browsing, cart management, checkout, and admin product operations.",
+    impact:
+      "Turns a store catalog into a complete shopping flow with cart, checkout, orders, and admin support.",
     problem:
       "Small online stores need a clear product catalog, secure checkout flow, and manageable admin workflow.",
     solution:
@@ -154,6 +160,8 @@ export const projects = [
     ],
     description:
       "A restaurant management and online ordering system for customers and restaurant operators.",
+    impact:
+      "Reduces manual restaurant ordering work with digital menus, checkout, order tracking, and dashboard flows.",
     problem:
       "Restaurants need a digital ordering workflow that reduces manual work and keeps menu, order, and payment information organized.",
     solution:
