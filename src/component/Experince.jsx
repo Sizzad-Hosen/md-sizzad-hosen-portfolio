@@ -11,26 +11,21 @@ const ExperienceSection = () => {
     {
       year: "2024 - Present",
       title: "Full Stack Developer (MERN Stack)",
-      company: "Freelancing at Fiverr, Upwork",
+      company: "Freelance projects",
     },
     {
       year: "2024",
       title: "Full Stack Developer (Part-Time)",
-      company: "Third Rock Den",
+      company: "Third Rock Technology",
     },
   ];
 
   return (
     <div className="text-white py-12">
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-3xl shadow-lg">
+      <div className="max-w-4xl mx-auto border border-white/10 bg-zinc-900/70 p-6 rounded-lg shadow-lg">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-semibold">EXPERIENCE</h2>
-          <div className="flex space-x-2">
-            <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-            <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-            <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-          </div>
+          <h2 className="text-2xl font-semibold">Experience</h2>
         </div>
 
         {/* Experience Timeline */}

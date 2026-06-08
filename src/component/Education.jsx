@@ -4,15 +4,15 @@ import { FaGraduationCap, FaLaptopCode } from "react-icons/fa";
 
 const educationData = [
   {
-    year: "2024 - Present Student",
-    title: "Computer Science And Engineering",
-    institution: "Begum Rokeya University | Rangpur",
+    year: "2024 - Present",
+    title: "B.Sc. in Computer Science and Engineering",
+    institution: "Begum Rokeya University, Rangpur",
     icon: <FaGraduationCap className="text-white" />,
   },
   {
     year: "2019 - 2021 (2 years)",
     title: "Higher Secondary Certificate",
-    institution: "Birgonj Govt College | Dinajpur",
+    institution: "Birganj Government College, Dinajpur",
     icon: <FaGraduationCap className="text-white" />,
   },
   {
@@ -35,7 +35,7 @@ const educationData = [
   },
   {
     year: "2023 - 2023 (6 months)",
-    title: "Web Development Course With Jhankar Mahbub (MERN Base)",
+    title: "Web Development Course with Jhankar Mahbub (MERN)",
     institution: "Programming Hero",
     icon: <FaLaptopCode className="text-white" />,
   },
@@ -50,15 +50,10 @@ const EducationSection = () => {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-3xl shadow-lg">
+      <div className="max-w-4xl mx-auto border border-white/10 bg-zinc-900/70 p-6 rounded-lg shadow-lg">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-2xl font-semibold">EDUCATION</h2>
-          <div className="flex space-x-2">
-            <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-            <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-            <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-          </div>
+          <h2 className="text-2xl font-semibold">Education</h2>
         </div>
 
         {/* Education Timeline */}

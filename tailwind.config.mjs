@@ -1,8 +1,7 @@
-// tailwind.config.mjs
 import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,60 +13,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ["Inter", "Arial", "sans-serif"],
+        heading: ["Poppins", "Inter", "sans-serif"],
+      },
     },
   },
-  plugins: [daisyui], // ✅ Import DaisyUI correctly
+  plugins: [daisyui],
   daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#a991f7",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
-          neutral: "#3d4451",
-          "base-100": "#ffffff",
-        },
-      },
-      "dark",
-      "cupcake",
-      "light",
-      "dark",
-      "cupcake",
-      "bumblebee",
-      "emerald",
-      "corporate",
-      "synthwave",
-      "retro",
-      "cyberpunk",
-      "valentine",
-      "halloween",
-      "garden",
-      "forest",
-      "aqua",
-      "lofi",
-      "pastel",
-      "fantasy",
-      "wireframe",
-      "black",
-      "luxury",
-      "dracula",
-      "cmyk",
-      "autumn",
-      "business",
-      "acid",
-      "lemonade",
-      "night",
-      "coffee",
-      "winter",
-      "dim",
-      "nord",
-      "sunset",
-    ],
+    themes: ["dark", "business", "corporate"],
   },
-  fontFamily: {
-    sans: ["Inter", "sans-serif"],
-    heading: ["Poppins", "sans-serif"],
-  },
-
-
 };
+
+export default config;

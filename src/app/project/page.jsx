@@ -1,9 +1,5 @@
-import React from 'react'
+import { redirect } from "next/navigation";
 
-const ProjectPage = () => {
-  return (
-    <div>ProjectPage</div>
-  )
+export default function ProjectPage() {
+  redirect("/projects");
 }
-
-export default ProjectPage

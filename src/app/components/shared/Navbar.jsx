@@ -2,21 +2,12 @@
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { navItems, siteProfile } from "@/data/site";
 
 const Navbar = ({ children }) => {
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { path: "/", title: "Home" },
-    { path: "/about", title: "About" },
-    { path: "/skills", title: "Skills" },
-    { path: "/projects", title: "Projects" },
-    { path: "/services", title: "Services" },
-    { path: "/contact", title: "Contact" },
-    { path: "/blogs", title: "Blogs" },
-  ];
 
   const handleNavClick = (path) => {
     router.push(path);
@@ -24,23 +15,26 @@ const Navbar = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen p-2 mx-auto text-white">
-      {/* Navbar */}
-      <div className="container mx-auto py-4 px-6">
-        <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="text-xl font-bold cursor-pointer" onClick={() => router.push("/")}>
-            SI<span className="text-2xl text-blue-600">ZZ</span>AD
-          </div>
+    <div className="min-h-screen mx-auto text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0f0f0f]/90 backdrop-blur">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+          <button
+            aria-label="Go to homepage"
+            className="rounded-md px-0 py-0 text-xl font-bold tracking-wide hover:text-blue-300"
+            onClick={() => router.push("/")}
+          >
+            SI<span className="text-2xl text-blue-500">ZZ</span>AD
+          </button>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden items-center gap-1 md:flex">
             {navItems.map((item) => (
               <button
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
-                className={`px-4 py-2 rounded-md transition ${
-                  pathname === item.path ? "bg-gray-700" : "hover:bg-gray-900"
+                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                  pathname === item.path
+                    ? "bg-white text-zinc-950"
+                    : "text-zinc-300 hover:bg-white/10 hover:text-white"
                 }`}
               >
                 {item.title}
@@ -48,70 +42,67 @@ const Navbar = ({ children }) => {
             ))}
           </div>
 
-          {/* Buttons */}
-          <div className="hidden lg:flex space-x-4">
+          <div className="hidden items-center gap-3 lg:flex">
             <button 
               onClick={() => router.push("/contact")} 
-              className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
+              className="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold hover:border-white/40 hover:bg-white/10"
             >
-              LET'S TALK
+              Contact Me
             </button>
-            <a>
-
             <button 
-  onClick={() => window.open("https://drive.google.com/file/d/1OL5QaG2oNNX0Kq1wc9PM2IAaBz3ShT_9/view", "_blank", "noopener,noreferrer")}
-  className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
->
-  GET MY RESUME
-</button>
-
-            </a>
+              onClick={() => window.open(siteProfile.resumeUrl, "_blank", "noopener,noreferrer")}
+              className="rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-400"
+            >
+              Download Resume
+            </button>
           </div>
 
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-white text-2xl">
+          <div className="flex items-center md:hidden">
+            <button
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+              className="rounded-md p-2 text-2xl text-white hover:bg-white/10"
+            >
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-        </div>
-      </div>
+        </nav>
 
-      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gradient-to-r from-[#1a1a1a] to-[#333333] rounded-md p-4 mx-4 space-y-4">
+        <div className="mx-4 mb-4 space-y-3 rounded-lg border border-white/10 bg-zinc-900 p-4 md:hidden">
           {navItems.map((item) => (
             <button
               key={item.path}
               onClick={() => handleNavClick(item.path)}
-              className={`block w-full text-left px-4 py-2 rounded-md transition ${
-                pathname === item.path ? "bg-gray-700" : "hover:bg-gray-800"
+              className={`block w-full rounded-md px-4 py-2 text-left transition ${
+                pathname === item.path ? "bg-white text-zinc-950" : "hover:bg-white/10"
               }`}
             >
               {item.title}
             </button>
           ))}
-          <div className="mt-4 space-y-2">
+          <div className="grid gap-2">
             <button 
               onClick={() => router.push("/contact")} 
-              className="w-full px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-800 transition"
+              className="w-full rounded-full border border-white/15 px-4 py-2 hover:bg-white/10"
             >
-              LET'S TALK
+              Contact Me
             </button>
-                    <button 
-          onClick={() => window.open("https://drive.google.com/file/d/1OL5QaG2oNNX0Kq1wc9PM2IAaBz3ShT_9/view", "_blank", "noopener,noreferrer")}
-          className="px-4 py-2 bg-gray-600 rounded-full hover:bg-gray-900 transition"
-        >
-          GET MY RESUME
-        </button>
-                  </div>
+            <button 
+              onClick={() => window.open(siteProfile.resumeUrl, "_blank", "noopener,noreferrer")}
+              className="w-full rounded-full bg-blue-500 px-4 py-2 font-semibold hover:bg-blue-400"
+            >
+              Download Resume
+            </button>
+          </div>
         </div>
       )}
+      </header>
 
-      {/* Page Content */}
-      <div className="p-6 min-h-[400px] rounded-md m-4">
+      <main className="mx-auto min-h-[400px] max-w-7xl px-4 py-8 sm:px-6">
         {children}
-      </div>
+      </main>
     </div>
   );
 };

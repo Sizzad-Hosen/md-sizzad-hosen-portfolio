@@ -10,7 +10,7 @@ const awards = [
     link:"https://drive.google.com/file/d/1TbuclzMOKmXNr1hC45g9gbrNrN4Jbd37/view",
     date: "February 10, 2024",
     description:
-      "This prestigious award is given to students who demonstrate exceptional dedication and performance throughout the course. To qualify, students must achieve a minimum of 50% on all assignments. Additionally, they undergo an exclusive SCIC training program designed to enhance their technical and interview skills. The final stage includes a mock interview, where those scoring 25+ out of 30 earn the coveted Black Belt Web Developer award.",
+      "Awarded by Programming Hero for consistent assignment performance, SCIC training participation, and mock interview performance.",
   },
   {
     title: "Completion with Excellence (Three Stars)",
@@ -18,7 +18,7 @@ const awards = [
     link:"https://drive.google.com/file/d/1Qfvxc9DLDM4M6f23-oFMm1IkkaNn566-/view",
     date: "February 18, 2024",
     description:
-      "This award recognizes students who successfully complete the course on time with outstanding commitment. It is given to those who consistently submit high-quality assignments and meet all deadlines. The Three Stars distinction is reserved for students who not only excel academically but also demonstrate exceptional learning progress and perseverance.",
+      "Recognized for completing the course on time, submitting assignments consistently, and maintaining strong learning progress.",
   },
 ];
 
@@ -30,20 +30,20 @@ const AwardsSection = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#1a1a1a] to-[#333333] p-6 rounded-3xl shadow-lg">
-        <h2 className="text-2xl font-semibold mb-6 text-center">AWARDS</h2>
+      <div className="max-w-4xl mx-auto border border-white/10 bg-zinc-900/70 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-semibold mb-6 text-center">Awards</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {awards.map((award, index) => (
             <motion.div
               key={index}
-              className="bg-gradient-to-r from-[#2b2a2a] to-[#141212] p-6 rounded-2xl shadow-lg"
+              className="border border-white/10 bg-black/20 p-6 rounded-lg shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
               <h3 className="text-xl font-bold">{award.title}</h3>
-              <p className="text-sm text-blue-400">BY {award.provider}</p>
+              <p className="text-sm text-blue-400">By {award.provider}</p>
               <p className="text-gray-400 text-sm mb-3">{award.date}</p>
               <p className="text-gray-300 text-sm">{award.description}</p>
 
@@ -52,9 +52,9 @@ const AwardsSection = () => {
               <a href={award.link} target="_blank" rel="noopener noreferrer">
               <button
                 type="button"
-                className="mt-4 border border-gray-500 hover:bg-white w-full py-3 bg-gradient-to-r from-[#7a7a7a] to-[#272525] text-white rounded-full hover:bg-gradient-to-r hover:from-[#fff6f6] hover:to-[#d1caca] hover:text-black transition-all"
+                className="mt-4 border border-white/15 w-full py-3 bg-blue-500 text-white rounded-full hover:bg-blue-400 transition-all"
               >
-                SEE CREDENTIALS
+                See Credentials
               </button>
             </a>  
 
